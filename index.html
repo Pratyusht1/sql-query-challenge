@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Query Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SQL Query Challenge</h1>
+    <p>"Ready to tackle the query! Once it's done, You can see my resume."
+    </p>
+    <p>"Can you reveal the name of the Power BI developer whose name is Pratyush?"!</p>
+    <div class="query">
+      <textarea rows="4" id="sqlQuery"></textarea>
+    </div>
+    <button class="button" type="button" id="submitButton">Submit Query</button>
+    <button class="button" type="button" id="showSolutionButton">Show Solution</button>
+    <button class="button" type="button" id="resetButton">Reset</button>
+    <div id="solution">
+      <p>Solution:</p>
+      <pre></pre> SELECT * FROM Developers WHERE Name = 'Pratyush' AND Role = 'Power BI Developer';	
+    </div>
+    <a id="dashboardLink" class="button" href="https://app.powerbi.com/discover/gallery/0579b437-67ba-4acf-b2c8-4bebc64b9899?experience=power-bi">Click here to see the dashboard</a>
+    <p id="funnyMessage">"Wow, you're absolutely awesome person because you give the time for that :)!  🚀</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
